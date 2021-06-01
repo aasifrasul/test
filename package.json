@@ -1,15 +1,18 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "^10.0.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  }
+	"name": "learn-starter",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint:css": "stylelint 'src/**/*.css'",
+		"lint:js": "eslint . --ext .js,.jsx,.ts,.tsx,.hbs",
+		"prettier": "prettier --write './**/*.{js,json,jsx,ts,tsx,hbs,css}'"
+	},
+	"dependencies": {
+		"next": "^10.0.0",
+		"react": "17.0.1",
+		"react-dom": "17.0.1"
+	}
 }
